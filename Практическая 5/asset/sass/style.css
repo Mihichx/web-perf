@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* Базовые настройки и переменные */
+@import 'base/normalize.css';
+/* Шапка сайта */
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Навигация */
+nav {
+  background: #111;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #ff6a00;
+}
+
+/* Hero-блок */
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  background: #fff;
+  color: #111;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #111;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn {
+  /* Основная акцентная кнопка */
+}
+.btn--primary {
+  background: #ff6a00;
+  color: #fff;
+  border: none;
+}
+.btn--primary:hover {
+  background: rgb(204, 84.8, 0);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+/* Базовые настройки и переменные */
+@import 'base/normalize.css';
+
+$color-dark: #111;
+$color-light: #fff;
+$color-accent: #ff6a00;
+$font-main: 'Inter', sans-serif;
+
+/* Шапка сайта */
+header {
+  background: $color-dark;
+  color: $color-light;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Навигация */
+nav {
+  background: $color-dark;
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  a {
+    color: $color-light;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+/* Hero-блок */
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  font-family: $font-main;
+  background: $color-light;
+  color: $color-dark;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid $color-dark;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  /* Основная акцентная кнопка */
+  &--primary {
+    background: $color-accent;
+    color: $color-light;
+    border: none;
+
+    &:hover {
+      background: darken($color-accent, 10%);
+    }
+  }
+}

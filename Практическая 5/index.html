@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин наушников</title>
+
+    <!-- Critical CSS -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: #f9f9f9;
+      }
+      header {
+        background: #111;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      .hero {
+        padding: 2rem;
+        text-align: center;
+      }
+      .btn {
+        background: #ff6600;
+        color: #fff;
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.5rem;
+      }
+    </style>
+
+    <!-- Основной CSS подключается позже -->
+    <link
+      rel="stylesheet"
+      href="asset/sass/style.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript><link rel="stylesheet" href="asset/sass/style.css" /></noscript>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <header><h1>Новые беспроводные наушники</h1></header>
+
+    <section class="hero">
+      <p>До 40 часов автономной работы. Высокое качество звука.</p>
+      <a href="#" class="btn">Купить</a>
+      <button class="btn btn--primary">Подробнее</button>
+      <h2 class="card__title">Хит продаж</h2>
+    </section>
+  </body>
+</html>
