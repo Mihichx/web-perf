@@ -1,0 +1,6 @@
+@use "../abstracts/variables" as *;
+
+.home {
+    background-color: $color_home;
+    padding: 20px 0;
+}

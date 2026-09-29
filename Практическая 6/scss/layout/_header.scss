@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+header {
+    @include d-center-row;
+    padding: 20px;
+    background-color: black;
+
+    a {
+        margin: 0 10px;
+        color: white;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

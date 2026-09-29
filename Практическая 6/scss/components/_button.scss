@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as *;
+
+.btn {
+    background-color: $color_button;
+    padding: 10px;
+    border-radius: 20px;
+    width: 150px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
